@@ -41,11 +41,13 @@ public abstract class BaseTest {
     }
 
     public WebDriver getDriver() {
+
         return TREAD_LOCAL_DRIVER.get();
     }
 
     @AfterMethod
     public void closeDriver() {
+
         getDriver().quit();
     }
 
